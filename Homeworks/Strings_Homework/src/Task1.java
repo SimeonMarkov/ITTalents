@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 
 public class Task1 {
-	
+	//main method
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
