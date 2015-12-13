@@ -1,3 +1,4 @@
+package calls;
 
 public class Call {
 	static double priceForAMinute = 0.4;
