@@ -49,6 +49,13 @@ public class Company {
 		}
 		
 		if(employee != null && department != null && Employee.getEmployeesSet().contains(employee) && Department.getDepartmentsSet().contains(department)){
+			if(!(employee instanceof Boss)){
+				for(Department currentDepartment : Department.getDepartmentsSet()){
+					if(workers.get(currentDepartment) != null && workers.get(currentDepartment).contains(employee)){
+						return;
+					}
+				}
+			}
 			workers.get(department).add(employee);
 		}
 	}
