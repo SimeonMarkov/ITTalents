@@ -1,11 +1,11 @@
 package employees;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class Department implements Comparable<Department>{
 	
 	private String name;
-	private static HashSet<Department> departmentsSet = new HashSet<Department>();
+	private static LinkedHashSet<Department> departmentsSet = new LinkedHashSet<Department>();
 	 
 	Department(String name){
 		this.setName(name);
@@ -22,7 +22,7 @@ public class Department implements Comparable<Department>{
 		}
 	}
 
-	public static HashSet<Department> getDepartmentsSet(){
+	public static LinkedHashSet<Department> getDepartmentsSet(){
 		return departmentsSet;
 	}
 	

@@ -3,17 +3,18 @@ package employees;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 
 public class Company {
 	
 	private static Company company;
 	private String name;
-	private static HashMap<Department, HashSet<Employee>> workers;
+	private static LinkedHashMap<Department, LinkedHashSet<Employee>> workers;
 
 	private Company(String name){
 		this.setName(name);
-		Company.workers = new HashMap<Department, HashSet<Employee>>();
+		Company.workers = new LinkedHashMap<Department, LinkedHashSet<Employee>>();
 	}
 	
 	public static Company getInstance(String name){
@@ -34,12 +35,12 @@ public class Company {
 		}
 	}
 	
-	public HashMap<Department,HashSet<Employee>> getWorkers(){
+	public HashMap<Department,LinkedHashSet<Employee>> getWorkers(){
 		return workers;
 	}
 	
 	public void createDepartmentInCompany(Department department){
-		workers.put(department, new HashSet<Employee>());
+		workers.put(department, new LinkedHashSet<Employee>());
 	}
 	
 	public void addWorkerInDepartment(Employee employee, Department department){

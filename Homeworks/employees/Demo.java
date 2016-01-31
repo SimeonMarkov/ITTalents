@@ -24,20 +24,20 @@ public class Demo {
 		
 		System.out.println("Printing all employees in the company:\n" + Employee.employeesSet + "\n");
 		
-		Employee.sortOnName();
-		Employee.sortOnAge();
-		Employee.sortOnSalary();
+		Employee.sortOnName(); // sort employees in the whole company based on their name
+		Employee.sortOnAge(); // sort employees in the whole company based on their age
+		Employee.sortOnSalary(); // sort employees in the whole company based on their salary
 		
 		Department dep1 = new Department("Department1");
  		Department dep2 = new Department("Department2");
  		
- 		company.addWorkerInDepartment(em2, dep1);
 		company.addWorkerInDepartment(em1, dep1);
+		company.addWorkerInDepartment(em2, dep1);
 		company.addWorkerInDepartment(em3, dep1);
 		company.addWorkerInDepartment(em4, dep2);
 		company.addWorkerInDepartment(em5, dep2);
 		company.addWorkerInDepartment(em6, dep2);
-		company.addWorkerInDepartment(em7, dep2);
+		company.addWorkerInDepartment(em7, dep2); //em7 is a duplicate employee to em6,so he should not be added in the current department
 		
 		for(Department department : company.getWorkers().keySet()){
 			System.out.println(department.getName() + ":");
@@ -47,10 +47,21 @@ public class Demo {
 			System.out.println("---------");
 		}
 		
+		//prints workers from current department,sorted by name
 		company.printWorkersFromDepartment(dep1);
-
-		em1.printSalaryForEachMonth();
 		System.out.println();
+		company.printWorkersFromDepartment(dep2);
+		System.out.println();
+
+		
+		em1.printSalaryForEachMonth();
 		em2.printSalaryForEachMonth();
+		em3.printSalaryForEachMonth();
+		em4.printSalaryForEachMonth();
+		em5.printSalaryForEachMonth();
+		em6.printSalaryForEachMonth();
+		
+		
 	}
+
 }

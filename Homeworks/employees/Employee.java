@@ -3,7 +3,6 @@ package employees;
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
@@ -59,7 +58,7 @@ public class Employee {
 		return this.iD;
 	}
 	
-	public static HashSet<Employee> getEmployeesSet(){
+	public static LinkedHashSet<Employee> getEmployeesSet(){
 		return employeesSet;
 	}
 	
@@ -108,9 +107,11 @@ public class Employee {
 	}
 	
 	public void printSalaryForEachMonth(){
+		System.out.println("Salaries for every month for " + this.getName() + ",ID:" + this.getID());
 		for(Map.Entry<String, Integer> salary : salariesForEachMonth.entrySet()){
 	    	System.out.println(salary.getKey() + "->" + salary.getValue() + " BGN");
 	    }
+		System.out.println();
 	}
 	
 	public String toString(){
