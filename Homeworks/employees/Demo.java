@@ -18,7 +18,7 @@ public class Demo {
 		Employee em4 = new Employee("pencho", 21, 800.0);
 		Employee em5 = new Employee("pesho", 45, 2800.0);
 		Employee em6 = new Employee("pancho", 22, 1900.0);
-		Employee em7 = new Employee("pancho", 21, 1900.0); //em7 should not be added due to name and age coincidence with em6
+		Employee em7 = new Employee("pancho", 22, 1800.0); //em7 should not be added due to name and age coincidence with em6
 		
 		Employee boss1 = new Boss("misho", 35, 3_000.0, "Factory manager");
 		
@@ -42,6 +42,7 @@ public class Demo {
 		company.addWorkerInDepartment(em7, dep2); //em7 is a duplicate employee to em6,so he should not be added in the current department
 		company.addWorkerInDepartment(boss1, dep1);
 		company.addWorkerInDepartment(boss1, dep2);
+		
 		
 		for(Department department : company.getWorkers().keySet()){
 			System.out.println(department.getName() + ":");
