@@ -17,16 +17,8 @@ public class Demo {
 		Employee em3 = new Employee("grisho", 33, 800.0);
 		Employee em4 = new Employee("pencho", 21, 800.0);
 		Employee em5 = new Employee("pesho", 45, 2800.0);
-		Employee em6 = new Employee("pancho", 22, 1800.0);
-		Employee em7 = new Employee("pancho", 22, 1900.0);
-
-		System.out.println(em1);
-		System.out.println(em2);
-		System.out.println(em3);
-		System.out.println(em4);
-		System.out.println(em5);
-		System.out.println(em6);
-		System.out.println(em7);
+		Employee em6 = new Employee("pancho", 22, 1900.0);
+		Employee em7 = new Employee("pancho", 21, 1900.0); //em7 should not be added due to name and age coincidence with em6
 		
 		System.out.println();
 		

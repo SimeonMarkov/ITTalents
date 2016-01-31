@@ -443,3 +443,430 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-31 19:16:02.690 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.jsp.jasper 4 0 2016-01-31 19:16:04.018
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.jsp.jasper [299]
+  Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.jsp.jasper.registry 4 0 2016-01-31 19:16:04.034
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.jsp.jasper.registry [300]
+  Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+    -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+       org.eclipse.equinox.jsp.jasper [299]
+         Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.help.webapp 4 0 2016-01-31 19:16:04.050
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help.webapp [345]
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.100"
+    -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+       org.eclipse.equinox.jsp.jasper.registry [300]
+         Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+           -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+              org.eclipse.equinox.jsp.jasper [299]
+                Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis.consumption.ui 4 0 2016-01-31 19:16:04.087
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.consumption.ui [483]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.751.v201501131919"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [496]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.101,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis.creation.ui 4 0 2016-01-31 19:16:04.100
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.creation.ui [484]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.300,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.751.v201501131919"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [496]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.101,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.consumption.core 4 0 2016-01-31 19:16:04.105
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.consumption.core [487]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.0.450.v201309242123"; singleton:="true"
+       org.eclipse.jst.ws.ui [520]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.204,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.consumption.ui 4 0 2016-01-31 19:16:04.115
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.consumption.ui [488]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.0.450.v201309242123"; singleton:="true"
+       org.eclipse.jst.ws.ui [520]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.204,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.creation.core 4 0 2016-01-31 19:16:04.196
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.creation.core [490]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201309242118"
+       org.eclipse.jst.ws.axis2.consumption.core [487]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.0.450.v201309242123"; singleton:="true"
+              org.eclipse.jst.ws.ui [520]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.204,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+                     org.eclipse.wst.ws.explorer [780]
+                       Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                            org.eclipse.equinox.jsp.jasper.registry [300]
+                              Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                                -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                                   org.eclipse.equinox.jsp.jasper [299]
+                                     Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.creation.ui 4 0 2016-01-31 19:16:04.216
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.creation.ui [491]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.751.v201501131919"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [496]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.101,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.ui 4 0 2016-01-31 19:16:04.236
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.ui [492]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.0.450.v201309242123"; singleton:="true"
+       org.eclipse.jst.ws.ui [520]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.204,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.consumption.ui 4 0 2016-01-31 19:16:04.247
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.consumption.ui [496]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.101,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+       org.eclipse.wst.ws.explorer [780]
+         Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+              org.eclipse.equinox.jsp.jasper.registry [300]
+                Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                  -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                     org.eclipse.equinox.jsp.jasper [299]
+                       Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.creation.ui 4 0 2016-01-31 19:16:04.255
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.creation.ui [499]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.101,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+       org.eclipse.wst.ws.explorer [780]
+         Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+              org.eclipse.equinox.jsp.jasper.registry [300]
+                Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                  -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                     org.eclipse.equinox.jsp.jasper [299]
+                       Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.ui 4 0 2016-01-31 19:16:04.261
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.ui [501]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.751.v201501131919"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [496]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.101,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.ui 4 0 2016-01-31 19:16:04.266
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.ui [504]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.751.v201501131919"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [496]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.101,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.uddiregistry 4 0 2016-01-31 19:16:04.272
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.uddiregistry [519]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.0.450.v201309242123"; singleton:="true"
+       org.eclipse.jst.ws.ui [520]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.204,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+              org.eclipse.wst.ws.explorer [780]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+                     org.eclipse.equinox.jsp.jasper.registry [300]
+                       Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                         -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                            org.eclipse.equinox.jsp.jasper [299]
+                              Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.ui 4 0 2016-01-31 19:16:04.277
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.ui [520]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.0.204,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.0.750.v201401291755"; singleton:="true"
+       org.eclipse.wst.ws.explorer [780]
+         Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+              org.eclipse.equinox.jsp.jasper.registry [300]
+                Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+                  -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+                     org.eclipse.equinox.jsp.jasper [299]
+                       Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.ws.explorer 4 0 2016-01-31 19:16:04.540
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.ws.explorer [780]
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.jsp.jasper.registry; bundle-version="[1.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.equinox.jsp.jasper.registry; bundle-version="1.0.300.v20130327-1442"
+       org.eclipse.equinox.jsp.jasper.registry [300]
+         Unresolved requirement: Import-Package: org.eclipse.equinox.jsp.jasper
+           -> Export-Package: org.eclipse.equinox.jsp.jasper; bundle-symbolic-name="org.eclipse.equinox.jsp.jasper"; bundle-version="1.0.400.v20130327-1442"; version="1.0.0"
+              org.eclipse.equinox.jsp.jasper [299]
+                Unresolved requirement: Import-Package: org.apache.jasper.servlet; version="[0.0.0,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)

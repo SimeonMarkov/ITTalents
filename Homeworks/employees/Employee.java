@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Random;
 
@@ -14,7 +15,7 @@ public class Employee {
 	private Double salary;
 	private int iD;
 	private static int workersCount = 1;
-	public static HashSet<Employee> employeesSet = new HashSet<Employee>();
+	public static LinkedHashSet<Employee> employeesSet = new LinkedHashSet<Employee>();
 	private LinkedHashMap<String,Integer> salariesForEachMonth = new LinkedHashMap<String, Integer>();
 	
 	public Employee(String name, int age, Double salary) {
